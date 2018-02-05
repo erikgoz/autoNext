@@ -1,0 +1,6 @@
+#!/bin/bash
+while true
+do
+	spotify next
+	sleep 31
+done

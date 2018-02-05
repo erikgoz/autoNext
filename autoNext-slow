@@ -1,0 +1,18 @@
+#!/bin/bash
+while true
+do
+	spotify next
+	var=$RANDOM
+	echo $var
+	R=$[$var%600]
+	echo $R
+	M=$[$var%7]
+	if (($M==0));
+	then
+		P=$[$var%75]
+		spotify pause
+		sleep $P
+		spotify play
+	fi
+	sleep $R
+done

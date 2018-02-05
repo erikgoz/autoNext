@@ -1,0 +1,10 @@
+#!/bin/bash
+while true
+do
+	spotify next
+	var=$RANDOM
+	echo $var
+	R=$[30 + $var%37]
+	echo $R
+	sleep $R
+done
